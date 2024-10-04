@@ -49,6 +49,8 @@ body {
     text-decoration: none;
     color: white;
     font-size: 25px;
+    border-style: solid;
+    padding: 4px;
 }
 
 main {
@@ -91,6 +93,10 @@ main {
     margin: 5px 0; /* Espaciado entre párrafos */
 }
 
+a:hover {
+    color: #f1c40f;
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -102,12 +108,16 @@ main {
     }
 
     .navbar ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        
     }
 
     .navbar li {
         margin: 5px 0;
+        margin-right: 20px;
+        margin-left: 20px;
+        
     }
 
     .titulo h1 {

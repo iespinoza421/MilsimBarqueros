@@ -1,0 +1,124 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Aldrich', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido al inicio */
+    padding: 20px; /* Añade un espaciado alrededor del contenido */
+    overflow: auto; /* Permite el desplazamiento si el contenido se desborda */
+}
+
+.textoPrincipal {
+    width: 100%; /* Ajusta el ancho del contenedor de texto */
+    max-width: 800px; /* Limita el ancho máximo para mejorar la legibilidad */
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+}
+
+.parrafo {
+    margin-bottom: 20px; /* Espacio entre los párrafos */
+}
+
+.parrafo h2 {
+    font-size: 24px;
+    margin-top: 20px; /* Espacio arriba de cada subtítulo */
+}
+
+.parrafo p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+
+    .parrafo h2 {
+        font-size: 20px;
+    }
+
+    .parrafo p {
+        font-size: 16px;
+    }
+}
